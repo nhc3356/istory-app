@@ -123,9 +123,9 @@ jobs:
       # 변경사항 커밋 및 푸시
       - name: 12.서비스 리포지토리 변경사항 커밋 및 푸시
         run: |
-          git config --global user.name 'dangtong76'
-          git config --global user.email 'dangtong@gmail.com'
+          git config --global user.name 'nhc3356'
+          git config --global user.email 'nhchihi5474@gmail.com'
           git commit -am "Update image tag to ${{ env.DOCKER_TAG }}"
-          git remote set-url origin https://${{ secrets.PAT }}@github.com/dangtong-s-inc/istory-service.git
+          git remote set-url origin https://${{ secrets.PAT }}@github.com/nhc3356/istory-app.git
           
           git push origin main
